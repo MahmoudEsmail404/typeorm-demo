@@ -13,11 +13,7 @@ export class Post extends Model {
     @ManyToOne(()=>User)
     user:User
 
-constructor({title,body}:{title:string,body:string}){
-    super()
-    Object.assign(this,{title,body})
 
-}
     
 
 }

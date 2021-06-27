@@ -5,16 +5,21 @@
    "username": "postgres",
    "password": "postgres",
    "database": "typeorm_tutorial",
-   "synchronize": true,
+   "synchronize": false,
    "logging": true,
    "entities": [
-      "src/entity/**/*.ts"
+      "src/entity/**/*.ts",
+      "./entity/**/*.js"
    ],
    "migrations": [
-      "src/migration/**/*.ts"
+      "src/migration/**/*.ts",
+      "./migration/**/*.js"
+
    ],
    "subscribers": [
-      "src/subscriber/**/*.ts"
+      "src/subscriber/**/*.ts",
+      "./subscriber/**/*.js"
+
    ],
    "cli": {
       "entitiesDir": "src/entity",

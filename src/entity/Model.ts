@@ -19,6 +19,11 @@ export default abstract class Model extends BaseEntity {
         this.uuid= uuid()
     }
 
+    constructor(model?:Partial<any>){
+        super()
+        Object.assign(this,model)
+    }
+
     toJSON(){
         return {...this,id:undefined}
     }
